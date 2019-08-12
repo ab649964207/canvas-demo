@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_1346155_a2bm1umxfd6.js"></script>
 </head>
-<body>
-    <canvas id="canvas" width="300px" height="300px">
 
-    </canvas>
+<body>
+    <div  class="canvas">
+        <div class="tools">
+            <svg id="pen" class="icon" aria-hidden="true">
+                <use xlink:href="#icon-Brush"></use>
+            </svg>
+            <svg id=eraser class="icon" aria-hidden="true">
+                <use xlink:href="#icon-eraser"></use>
+            </svg>
+            <svg id=clear class="icon" aria-hidden="true">
+                <use xlink:href="#icon-clear"></use>
+            </svg>
+            <svg id=save class="icon" aria-hidden="true">
+                <use xlink:href="#icon-save"></use>
+            </svg>
+            
+        </div>
+        <div id="colors" class="colors">
+            <li id="black"></li>
+            <li id="red"></li>
+            <li id="green"></li>
+            <li id="blue"></li>
+        </div>
+
+        <canvas id="canvas" width="300px" height="300px">
+
+        </canvas>
+    </div>
+
 
 
 
     <script src="main.js"></script>
 
 </body>
+
 </html>

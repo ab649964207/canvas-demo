@@ -1,7 +1,90 @@
-#canvas{
-    background-color: red;
+#canvas {
+    background-color: white;
+    display: block;
+   
+   
+}
 
-    }
 body {
     margin: 0;
-    }
+    
+}
+
+li {
+    list-style: none;
+}
+
+.tools {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.canvas {
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    /* font-size: 24px; */
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.tools svg {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /* font-size: 24px; */
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    transition: all 0.3s;
+    padding: 0 5px;
+}
+
+.tools svg.active {
+    fill: red;
+    transform: scale(1.3);
+}
+
+.colors {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    display: none;
+}
+
+.colors.active {
+    display: block;
+}
+
+.colors>li {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.colors #red {
+    background-color: red;
+}
+
+.colors #green {
+    background-color: green;
+}
+
+.colors #blue {
+    background-color: blue;
+}
+
+.colors #black {
+    background-color: black;
+}
+
+.colors .active {
+    transform: scale(1.2);
+}
