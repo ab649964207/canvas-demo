@@ -119,9 +119,15 @@ save.onclick = function () {
     document.body.appendChild(a);
     a.href = url;
     name = prompt('输入文件名');
-    a.download = name;
-    a.target = '_blank';
-    a.click()
+
+    if (name !== 'null') {
+        a.download = name;
+        a.target = '_blank';
+        a.click()
+        
+        return
+    }
+    
 }
 
 
